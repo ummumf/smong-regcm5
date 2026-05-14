@@ -69,9 +69,6 @@ export LIBS="-lnetcdf -lpnetcdf -lcurl -lhdf5_hl -lhdf5 -lz -lm -ldl -lgcc -lgfo
 CC=mpiicx FC=mpiifx CXX=mpiicpx F90=mpiifx F77=mpiifx \
 ./configure --prefix=$DIR --enable-netcdf-4 --enable-netcdf4 --enable-parallel-tests --enable-logging --enable-hdf5
 
-# edit file 
-vi ~/.bashrc
-# add
 # >>> RegCM / NetCDF Intel setup >>>
 export PREFIX=/home/ummu/libraries
 export PATH=$PREFIX/bin:$PATH
@@ -89,9 +86,6 @@ export CFLAGS="-O2 -fno-lto"
 export FCFLAGS="-O2 -fno-lto"
 export CPPFLAGS="-I$PREFIX/include"
 export LDFLAGS="-L$PREFIX/lib"
-
-#then
-source ~/.bashrc
 
 #RegCM5
 git clone https://github.com/ICTP/RegCM.git
